@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | [Social media dashboard with theme switcher]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,99 +16,101 @@
   </style>
 </head>
 <body>
-
-  <header id="header">
-    <div class="title">
-      Social Media Dashboard
-      Total Followers: 23,004
-    </div>    
-    <div class="theme-toggle">
-      Dark Mode
-    </div>  
-  </header>
+  <div class="container">
+    <header id="header">
+      <div class="title">
+        <div class="app-name">
+          Social Media Dashboard
+        </div>
+        <div class="total-followers">
+          Total Followers: 23,004
+        </div>  
+      </div>    
+      <div class="theme-toggle">
+        Dark Mode
+      </div>  
+    </header>
+    <hr/>
+    <section class="total">
+      <div class="box">
+        <p class="username" >@nathanf</p>
+        <h2 class="follwers">1987</h2>
+        <h4 class="description">Followers</h4>
+        <p class="new-followers">12 Today</p>
+      </div>
+      <div class="box">
+        <p class="username" >@nathanf</p>
+        <h2 class="follwers">1044</h2>
+        <h4 class="description">Followers</h4>
+        <p class="new-followers">99 Today</p>
+      </div>
+      <div class="box">
+        <p class="username" >@realnathanf</p>
+        <h2 class="follwers">11k</h2>
+        <h4 class="description">Followers</h4>
+        <p class="new-followers">1099 Today</p>
+      </div>
+      <div class="box">
+        <p class="username" > Nathan F.</p>
+        <h2 class="follwers">8239</h2>
+        <h4 class="description">Subscribers</h4>
+        <p class="new-followers">144 Today</p>
+      </div>
+    </section>
   
-  <section class="total">
-    <div class="box">
-      <p class="username" >@nathanf</p>
-      <h2 class="follwers">1987</h2>
-      <h4 class="description">Followers</h4>
-      <p class="new-followers">12 Today</p>
-    </div>
-    <div class="box">
-      <p class="username" >@nathanf</p>
-      <h2 class="follwers">1044</h2>
-      <h4 class="description">Followers</h4>
-      <p class="new-followers">99 Today</p>
-    </div>
-    <div class="box">
-      <p class="username" >@nathanf</p>
-      <h2 class="follwers">1044</h2>
-      <h4 class="description">Followers</h4>
-      <p class="new-followers">99 Today</p>
-    </div>
-    <div class="box">
-      <p class="username" >@realnathanf</p>
-      <h2 class="follwers">11k</h2>
-      <h4 class="description">Followers</h4>
-      <p class="new-followers">1099 Today</p>
-    </div>
-    <div class="box">
-      <p class="username" > Nathan F.</p>
-      <h2 class="follwers">8239</h2>
-      <h4 class="description">Subscribers</h4>
-      <p class="new-followers">144 Today</p>
-    </div>
-  </section>
-
-  <section class="today"> 
-    <h2>Overview - Today</h2>
+    <section class="today"> 
+      <div class="overview block">
+        <h2>Overview - Today</h2>
+      </div>
+  
+      <div class="content">
+        <div class="box-wide">
+          <p class="today-desc">Page Views</p>
+          <h3 class="page-views today-value">87</h3>
+          <p class="percentage">3%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Likes</p>
+          <h3 class="page-views today-value">52</h3>
+          <p class="percentage">2%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Likes</p>
+          <h3 class="page-views today-value">5462</h3>
+          <p class="percentage">2257%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Profile Views</p>
+          <h3 class="page-views today-value">52k</h3>
+          <p class="percentage">1375%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Retweets</p>
+          <h3 class="page-views today-value">117</h3>
+          <p class="percentage">303%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Likes</p>
+          <h3 class="page-views today-value">507</h3>
+          <p class="percentage">553%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Likes</p>
+          <h3 class="page-views today-value">19%</h3>
+          <p class="percentage">3%</p>
+        </div>
+        <div class="box-wide">
+          <p class="today-desc">Total Views</p>
+          <h3 class="page-views today-value">1407</h3>
+          <p class="percentage">12%</p>
+        </div>
+      </div>
+    </section>
     
-    <div class="box-wide">
-      <p class="today-desc">Page Views</p>
-      <h3 class="page-views today-value">87</h3>
-      <p class="percentage">3%</p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aabhas Sao</a>.
     </div>
-    <div class="box-wide">
-      <p class="today-desc">Likes</p>
-      <h3 class="page-views today-value">52</h3>
-      <p class="percentage">2%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Likes</p>
-      <h3 class="page-views today-value">5462</h3>
-      <p class="percentage">2257%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Profile Views</p>
-      <h3 class="page-views today-value">52k</h3>
-      <p class="percentage">1375%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Retweets</p>
-      <h3 class="page-views today-value">117</h3>
-      <p class="percentage">303%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Likes</p>
-      <h3 class="page-views today-value">507</h3>
-      <p class="percentage">553%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Likes</p>
-      <h3 class="page-views today-value">19%</h3>
-      <p class="percentage">3%</p>
-    </div>
-    <div class="box-wide">
-      <p class="today-desc">Total Views</p>
-      <h3 class="page-views today-value">1407</h3>
-      <p class="percentage">12%</p>
-    </div>
-  
-  </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Aabhas Sao</a>.
   </div>
 
 </body>
