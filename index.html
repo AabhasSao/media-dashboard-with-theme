@@ -11,8 +11,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { text-align: center; }
+    .attribution a { color: var(--font-primary); }
   </style>
 </head>
 <body>
@@ -20,41 +20,73 @@
     <header id="header">
       <div class="title">
         <div class="app-name">
-          Social Media Dashboard
+          <h3>Social Media Dashboard</h3>
         </div>
         <div class="total-followers">
-          Total Followers: 23,004
+          <p>Total Followers: 23,004</p>
         </div>  
       </div>    
-      <div class="theme-toggle">
-        Dark Mode
-      </div>  
-    </header>
-    <hr/>
+  
+      <div class="theme-switch-wrapper" id="#switch">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      <em>Enable Dark Mode!</em>
+      </div>
+    </header> 
+
     <section class="total">
       <div class="box">
+        <img src="images/icon-facebook.svg" alt="facebook-logo">
         <p class="username" >@nathanf</p>
-        <h2 class="follwers">1987</h2>
-        <h4 class="description">Followers</h4>
-        <p class="new-followers">12 Today</p>
+        <div class="follow-desc">
+          <h2 class="followers">1987</h2>
+          <h4 class="description">Followers</h4>
+        </div>
+        <div class="percentage">
+          <img src="images/icon-up.svg" alt="up-arrow">
+          <p class="new-followers increase">12 Today</p>
+        </div> 
       </div>
+
       <div class="box">
+        <img src="images/icon-twitter.svg" alt="twitter-logo">
         <p class="username" >@nathanf</p>
-        <h2 class="follwers">1044</h2>
-        <h4 class="description">Followers</h4>
-        <p class="new-followers">99 Today</p>
+        <div class="follow-desc">
+          <h2 class="followers">1044</h2>
+          <h4 class="description">Followers</h4>
+        </div>
+        <div class="percentage">
+          <img src="images/icon-up.svg" alt="up-arrow">
+          <p class="new-followers increase">99 Today</p>
+        </div> 
       </div>
+      
       <div class="box">
+        <img src="images/icon-instagram.svg" alt="instagram-logo">
         <p class="username" >@realnathanf</p>
-        <h2 class="follwers">11k</h2>
-        <h4 class="description">Followers</h4>
-        <p class="new-followers">1099 Today</p>
+        <div class="follow-desc">
+          <h2 class="followers">11k</h2>
+          <h4 class="description">Followers</h4>
+        </div>
+        <div class="percentage">
+          <img src="images/icon-up.svg" alt="up-arrow">
+          <p class="new-followers increase">1099 Today</p>
+        </div> 
       </div>
+
       <div class="box">
+        <img src="images/icon-youtube.svg" alt="youtube-logo">
         <p class="username" > Nathan F.</p>
-        <h2 class="follwers">8239</h2>
+        <div class="follow-desc">
+          <h2 class="followers">8239</h2>
         <h4 class="description">Subscribers</h4>
-        <p class="new-followers">144 Today</p>
+        </div>
+        <div class="percentage">
+          <img src="images/icon-down.svg" alt="up-arrow">
+          <p class="new-followers decrease">144 Today</p>
+        </div> 
       </div>
     </section>
   
@@ -65,44 +97,115 @@
   
       <div class="content">
         <div class="box-wide">
-          <p class="today-desc">Page Views</p>
-          <h3 class="page-views today-value">87</h3>
-          <p class="percentage">3%</p>
+          <div class="today-left">
+            <p class="today-desc">Page Views</p>
+            <h3 class="page-views today-value">87</h3>
+          </div>
+          <div class="today-right"> 
+            <img src="images/icon-facebook.svg" alt="facebook-logo">
+            <div class="percentage">
+              <img src="images/icon-up.svg" alt="up-arrow">
+              <p class="increase">3%</p>
+            </div>
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Likes</p>
-          <h3 class="page-views today-value">52</h3>
-          <p class="percentage">2%</p>
+          <div class="today-left">
+            <p class="today-desc">Likes</p>
+            <h3 class="page-views today-value">52</h3>
+          </div>
+          <div class="today-right"> 
+            <img src="images/icon-facebook.svg" alt="facebook-logo">
+            <div class="percentage">
+              <img src="images/icon-down.svg" alt="up-arrow">
+              <p class="decrease">2%</p>
+            </div>
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Likes</p>
-          <h3 class="page-views today-value">5462</h3>
-          <p class="percentage">2257%</p>
+          <div class="today-left">
+            <p class="today-desc">Likes</p>
+            <h3 class="page-views today-value">5462</h3>
+          </div>
+          <div class="today-right"> 
+            <img src="images/icon-instagram.svg" alt="instagram-logo">
+            <div class="percentage">
+              <img src="images/icon-up.svg" alt="up-arrow">
+              <p class="increase">2257%</p>
+            </div>
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Profile Views</p>
-          <h3 class="page-views today-value">52k</h3>
-          <p class="percentage">1375%</p>
+          <div class="today-left"> 
+            <p class="today-desc">Profile Views</p>
+            <h3 class="page-views today-value">52k</h3>
+          </div>
+          <div class="today-right">
+            <img src="images/icon-instagram.svg" alt="instagram-logo"> 
+            <div class="percentage">
+              <img src="images/icon-up.svg" alt="up-arrow">
+              <p class="increase">1375%</p>
+            </div>           
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Retweets</p>
-          <h3 class="page-views today-value">117</h3>
-          <p class="percentage">303%</p>
+          <div class="today-left">
+            <p class="today-desc">Retweets</p>
+            <h3 class="page-views today-value">117</h3>
+          </div>
+          <div class="today-right">
+            <img src="images/icon-twitter.svg" alt="twitter-logo"> 
+            <div class="percentage">
+              <img src="images/icon-up.svg" alt="up-arrow">
+              <p class="increase">303%</p>
+            </div> 
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Likes</p>
-          <h3 class="page-views today-value">507</h3>
-          <p class="percentage">553%</p>
+          <div class="today-left">
+            <p class="today-desc">Likes</p>            
+            <h3 class="page-views today-value">507</h3>
+          </div>
+          <div class="today-right">
+            <img src="images/icon-twitter.svg" alt="twitter-logo">
+            <div class="percentage">
+              <img src="images/icon-up.svg" alt="up-arrow">
+              <p class="increase">553%</p>
+            </div> 
+          </div>
         </div>
+        
         <div class="box-wide">
-          <p class="today-desc">Likes</p>
-          <h3 class="page-views today-value">19%</h3>
-          <p class="percentage">3%</p>
+          <div class="today-left">
+            <p class="today-desc">Likes</p>
+            <h3 class="page-views today-value">107</h3>
+          </div>
+          <div class="today-right">
+            <img src="images/icon-youtube.svg" alt="youtube-logo"> 
+            <div class="percentage">
+              <img src="images/icon-down.svg" alt="up-arrow">
+              <p class="decrease">19%</p>
+            </div> 
+          </div>
         </div>
+
         <div class="box-wide">
-          <p class="today-desc">Total Views</p>
-          <h3 class="page-views today-value">1407</h3>
-          <p class="percentage">12%</p>
+          <div class="today-left">
+            <p class="today-desc">Total Views</p>
+            <h3 class="page-views today-value">1407</h3>
+          </div>
+          <div class="today-right">
+            <img src="images/icon-youtube.svg" alt="youtube-logo"> 
+            <div class="percentage">
+              <img src="images/icon-down.svg" alt="up-arrow">
+              <p class="decrease">12%</p>
+            </div> 
+          </div>
         </div>
       </div>
     </section>
@@ -112,6 +215,6 @@
       Coded by <a href="#">Aabhas Sao</a>.
     </div>
   </div>
-
+  <script src="index.js"></script>
 </body>
 </html>
